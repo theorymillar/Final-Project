@@ -10,6 +10,7 @@ import Foundation
 
 
 struct Animals {
+    var name:String
     var url:String
     var CPR:String
     var image:String
