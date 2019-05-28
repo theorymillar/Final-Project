@@ -41,7 +41,7 @@ class TableViewController: UITableViewController {
         
         animalList.append(anim)
         
-        anim = Animals(name: "Horse", url: "https://en.wikipedia.org/wiki/Horse", CPR: "", image: "horse")
+        anim = Animals(name: "Foal", url: "https://en.wikipedia.org/wiki/Horse", CPR: "You will need a foaling kit and a resuscitation bag to perform CPR on a foal\n\n1. Check the airway for anything blocking it, if obstructions are found remove them\n2. Rub the foal vigorously with towels for 30 seconds to attempt to stimulate breathing, if this doesn't work tickle the foal's nostrils or ears\n3. If the foal still isn't breathing, position it on its right side and place the mask over the nose and mouth of the foal\n4. Squeeze the bag with two hands 10-20 times per minute, after 30 seconds of these compressions check for a heartbeat, if it is less than 40 beats per minute prepare to do chest compressions\n5. Stand over the foal and place your hands just behind its triceps at the highest point of the thorax\n6. Use your entire body weight to perform compressions at a rate of 80-120 a minute, switch", image: "horse")
         
         animalList.append(anim)
         
