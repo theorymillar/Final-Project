@@ -9,6 +9,7 @@
 import UIKit
 
 class AnimalViewController: UIViewController {
+    
     var animal:Animals?
     
 
@@ -22,9 +23,10 @@ class AnimalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(animal?.CPR ?? "didnt work :(")
         
-        self.textView.text = animal?.CPR
-        self.imageView.image = UIImage.init(named: (animal?.image)!)
+        textView.text = animal?.CPR
+        imageView.image = UIImage.init(named: (animal?.image)!)
 
     }
 }

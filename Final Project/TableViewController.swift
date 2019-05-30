@@ -48,12 +48,6 @@ class TableViewController: UITableViewController {
         anim = Animals(name: "Rabbit", url: "https://en.wikipedia.org/wiki/Rabbit", CPR: "1. Position the rabbit on its back\n2. Look at the rabbit's chest to see if it is breathing\n3. Listen to the rabbit's chest to check for a heartbeat, if there is no heartbeat or breathing continue with CPR\n4. Tilt the rabbit's head back to open the airway\n5. Hold the mouth of the rabbit closed and seal your lips around the rabbit's nose\n6. Quickly blow 5 small breaths into the rabbit\n7. Check for a heartbeat by placing your finger on the large vein on the inside of the rabbit's back leg\n8. If no heartbeat is detected place your place your thumb at the top of the rabbit's chest and gently compress once every second\n9. After one minute of compressions give the rabbit 5 more breaths and repeat until the rabbit regains consciousness", image: "rabbit")
         
         animalList.append(anim)
-        
-        
-        
-        
-        
-        
     }
 
     
@@ -76,6 +70,15 @@ class TableViewController: UITableViewController {
 
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+        var newVC = segue.destination as! AnimalViewController
+        
+        var selectedItem = self.tableView.indexPathForSelectedRow?.row
+        var obj:Animals = animalList[selectedItem!]
+        
+        newVC.animal = obj
+        
         
     }
 
