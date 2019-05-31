@@ -117,7 +117,7 @@
                                 <rect key="frame" x="20" y="98" width="374" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="ysa-ba-rEc" kind="show" id="EfP-C8-knM"/>
+                                    <segue destination="ysa-ba-rEc" kind="show" id="LPJ-Sj-jEX"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ETN-1V-yQo">

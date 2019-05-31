@@ -12,6 +12,11 @@ class AnimalViewController: UIViewController {
     
     var animal:Animals?
     
+//    @IBAction func button(_ sender: Any) {
+//        if let url = URL(string: (animal?.url)!){
+//        }
+//    }
+    
 
     @IBOutlet weak var textView: UITextView!
     
