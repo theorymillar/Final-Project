@@ -248,7 +248,9 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RA-y5-JvE">
                                 <rect key="frame" x="20" y="108" width="374" height="734"/>
-                                <string key="text">Goal: The goal of this project is to make steps to conduct animal CPR more accessable to everyone. Only 6% of animals that are taken to the ER to be resusitated live to see the outside world again. With basic CPR many more of these animals could survive.</string>
+                                <mutableString key="text">This app gives people access to types of CPR for different animals. Many animals that are taken to the animal ER and don't survive could have been saved if the owner had known how to conduct CPR on them. This app makes the different types of CPR accessible because it is difficult to find information on animal CPR. My hope is that with the use of this app many pet's lives will be saved.
+
+This app is intended for anyone who owns a pet or spends a lot of time around animals. You never know when you might need to perform CPR on an animal, so it is always good to be prepared.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -271,13 +273,14 @@
         <!--View Controller-->
         <scene sceneID="e3l-ex-mde">
             <objects>
-                <viewController id="Hv6-mp-3af" sceneMemberID="viewController">
+                <viewController id="Hv6-mp-3af" customClass="ViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vdC-BJ-qv7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Thank you to Paul Way for the name and icon design" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfM-Pa-F9n">
-                                <rect key="frame" x="20" y="80" width="374" height="567"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilt-fL-88l">
+                                <rect key="frame" x="15" y="103" width="384" height="744"/>
+                                <mutableString key="text">Thank you to Paul Way for the name and icon design. Thank you to the following websites for the original information on how to conduct CPR for each animal: https://www.cprcertified.com/blog/how-to-save-other-pets-with-cpr                                    https://www.cuteness.com/article/perform-cpr-rabbit                                                                                                                    http://www.wingwise.com/cpr.htm                                                                                                 https://www.wikihow.com/Revive-a-Goldfish                                                                                                 http://janestclair.net/how-to-resuscitate-a-lizard/          https://www.onegreenplanet.org/animalsandnature/how-to-do-pet-cpr/                                                                                                 https://www.homeagain.com/articles/learning-pet-cpr.html                                                                                                 https://www.petmd.com/cat/emergency/common-emergencies/e_ct_respiration_cpr</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -285,15 +288,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xfM-Pa-F9n" firstAttribute="leading" secondItem="adg-Gz-qfC" secondAttribute="leading" constant="20" id="Jgb-BQ-JHJ"/>
-                            <constraint firstAttribute="trailing" secondItem="xfM-Pa-F9n" secondAttribute="trailing" constant="20" id="vZy-Kr-T3z"/>
+                            <constraint firstItem="adg-Gz-qfC" firstAttribute="trailing" secondItem="Ilt-fL-88l" secondAttribute="trailing" constant="15" id="7hY-3V-8Fb"/>
+                            <constraint firstItem="Ilt-fL-88l" firstAttribute="top" secondItem="adg-Gz-qfC" secondAttribute="top" constant="15" id="ezH-eR-Q0i"/>
+                            <constraint firstItem="adg-Gz-qfC" firstAttribute="bottom" secondItem="Ilt-fL-88l" secondAttribute="bottom" constant="15" id="hEf-zx-Wei"/>
+                            <constraint firstItem="Ilt-fL-88l" firstAttribute="leading" secondItem="adg-Gz-qfC" secondAttribute="leading" constant="15" id="xN9-wa-kwT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="adg-Gz-qfC"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8z-Dg-FMH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="828.93553223388312"/>
+            <point key="canvasLocation" x="1075.3623188405797" y="828.34821428571422"/>
         </scene>
     </scenes>
 </document>

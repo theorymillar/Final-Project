@@ -33,7 +33,7 @@ class TableViewController: UITableViewController {
         
         animalList.append(anim)
         
-        anim = Animals(name: "Goldfish", url: "https://en.wikipedia.org/wiki/Goldfish", CPR: "1. Check for signs of life before starting CPR\n2. Place the goldfish in a clean containing filled with water from its tank\n3. Hold the fish in your hand and gently remove any dirt or debris from its sides and back\n4. Use your fingers to gently open the fishes gills, you can also massaging the fish's underbelly to stimulate air flow\n5. Move the goldfish close to the oxygenated water of an air stone\n6. To help your fish recover you can add one teaspoon of salt per gallon of water, keep your fish in the salt water for 1-3 minutes before moving it back to its main tank", image: "goldfish")
+        anim = Animals(name: "Goldfish", url: "https://en.wikipedia.org/wiki/Goldfish", CPR: "1. Check for signs of life before starting CPR\n2. Place the goldfish in a clean container filled with water from its tank\n3. Hold the fish in your hand and gently remove any dirt or debris from its sides and back\n4. Use your fingers to gently open the fishes gills, you can also massaging the fish's underbelly to stimulate air flow\n5. Move the goldfish close to the oxygenated water of an air stone\n6. To help your fish recover you can add one teaspoon of salt per gallon of water, keep your fish in the salt water for 1-3 minutes before moving it back to its main tank", image: "goldfish")
         
         animalList.append(anim)
         
