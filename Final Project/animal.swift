@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct Animals {
+public struct Animals {
     var name:String
     var url:String
     var CPR:String

@@ -12,10 +12,10 @@ class TableViewController: UITableViewController {
     
     var animalList = [Animals]()
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
         var anim = Animals(name: "Dog", url: "https://en.wikipedia.org/wiki/Dog", CPR: "1. Open the dog's mouth and check to see if the airway is clear, if not, carefully remove any obstruction\n2. Lay the dog on its right side and extend the head to align with its neck, then open its mouth and pull its tongue forward\n3. If there is no breathing hold the mouth closed and blow 4-5 small breaths into the dog's nose\n4. Check for a heartbeat before performing chest compressions\n5. Place the heel of your palm over the dog's heart, intertwine your fingers, and lock your elbows\n6. Give 30 compressions and then 2-3 rescue breaths until the dog is breathing again and you feel a heartbeat", image: "dog")
         
@@ -49,26 +49,26 @@ class TableViewController: UITableViewController {
         
         animalList.append(anim)
     }
-
     
-
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return animalList.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = animalList[indexPath.row].name
         return cell
     }
-
-
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         
@@ -78,8 +78,5 @@ class TableViewController: UITableViewController {
         var obj:Animals = animalList[selectedItem!]
         
         newVC.animal = obj
-        
-        
     }
-
 }

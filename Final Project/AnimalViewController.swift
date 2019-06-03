@@ -7,31 +7,35 @@
 //
 
 import UIKit
+import WebKit
 
 class AnimalViewController: UIViewController {
     
     var animal:Animals?
     
-//    @IBAction func button(_ sender: Any) {
-//        if let url = URL(string: (animal?.url)!){
-//        }
-//    }
     
-
+    
     @IBOutlet weak var textView: UITextView!
     
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var nameView: UITextView!
     
     
+    @IBAction func button(_ sender: Any) {
+        if let url = NSURL(string: (animal?.url)!) {
+            
+            UIApplication.shared.open(url as URL, options:[:], completionHandler:nil)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        print(animal?.CPR ?? "didnt work :(")
+        
+        nameView.text = animal?.name
         
         textView.text = animal?.CPR
         imageView.image = UIImage.init(named: (animal?.image)!)
-
+        
     }
 }

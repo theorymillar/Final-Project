@@ -113,15 +113,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9Q-zx-UFk">
-                                <rect key="frame" x="20" y="98" width="374" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="ysa-ba-rEc" kind="show" id="LPJ-Sj-jEX"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ETN-1V-yQo">
-                                <rect key="frame" x="30" y="143.00000000000003" width="354" height="479.66666666666674"/>
+                                <rect key="frame" x="30" y="148.00000000000003" width="354" height="474.66666666666674"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -133,36 +126,73 @@
                                     <constraint firstAttribute="width" secondItem="YrU-q1-VU2" secondAttribute="height" multiplier="345:188" id="B4S-kn-JYY"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gf-Me-27n">
+                                <rect key="frame" x="30" y="103" width="354" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9Q-zx-UFk">
+                                <rect key="frame" x="30" y="103" width="364" height="30"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="button:" destination="hle-zC-8pw" eventType="touchUpInside" id="akd-at-BtZ"/>
+                                    <segue destination="ysa-ba-rEc" kind="show" id="SSn-L8-m2t"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ETN-1V-yQo" firstAttribute="top" secondItem="l9Q-zx-UFk" secondAttribute="bottom" constant="15" id="1jh-JF-Uc8"/>
+                            <constraint firstItem="ETN-1V-yQo" firstAttribute="top" secondItem="l9Q-zx-UFk" secondAttribute="bottom" constant="15" id="2Ph-1m-eR5"/>
                             <constraint firstItem="WOi-Gf-l7C" firstAttribute="trailing" secondItem="YrU-q1-VU2" secondAttribute="trailing" constant="15" id="4Un-fy-Wyl"/>
                             <constraint firstItem="YrU-q1-VU2" firstAttribute="leading" secondItem="WOi-Gf-l7C" secondAttribute="leading" constant="15" id="7Gg-bE-ib9"/>
+                            <constraint firstItem="9gf-Me-27n" firstAttribute="top" secondItem="WOi-Gf-l7C" secondAttribute="top" constant="15" id="9B2-mU-Wln"/>
+                            <constraint firstItem="WOi-Gf-l7C" firstAttribute="trailing" secondItem="l9Q-zx-UFk" secondAttribute="trailing" constant="30" id="BhA-8L-SFk"/>
                             <constraint firstItem="YrU-q1-VU2" firstAttribute="top" secondItem="ETN-1V-yQo" secondAttribute="bottom" constant="15" id="FJm-Ze-LcN"/>
                             <constraint firstItem="WOi-Gf-l7C" firstAttribute="trailing" secondItem="ETN-1V-yQo" secondAttribute="trailing" constant="30" id="FXR-qV-11e"/>
+                            <constraint firstItem="WOi-Gf-l7C" firstAttribute="trailing" secondItem="9gf-Me-27n" secondAttribute="trailing" constant="30" id="Hxk-65-eeQ"/>
                             <constraint firstItem="WOi-Gf-l7C" firstAttribute="trailing" secondItem="YrU-q1-VU2" secondAttribute="trailing" constant="15" id="Ld5-ND-YpB"/>
                             <constraint firstItem="YrU-q1-VU2" firstAttribute="leading" secondItem="WOi-Gf-l7C" secondAttribute="leading" constant="15" id="Mtz-rk-R4F"/>
                             <constraint firstItem="l9Q-zx-UFk" firstAttribute="top" secondItem="WOi-Gf-l7C" secondAttribute="top" constant="10" id="NGU-Yl-DuT"/>
+                            <constraint firstItem="ETN-1V-yQo" firstAttribute="top" secondItem="9gf-Me-27n" secondAttribute="bottom" constant="30" id="NQc-59-nMb"/>
                             <constraint firstItem="YrU-q1-VU2" firstAttribute="top" secondItem="ETN-1V-yQo" secondAttribute="bottom" constant="15" id="Ocx-vF-LPO"/>
                             <constraint firstItem="WOi-Gf-l7C" firstAttribute="bottom" secondItem="YrU-q1-VU2" secondAttribute="bottom" constant="15" id="Poa-zY-46O"/>
+                            <constraint firstItem="9gf-Me-27n" firstAttribute="leading" secondItem="WOi-Gf-l7C" secondAttribute="leading" constant="30" id="Qe6-gR-aXx"/>
                             <constraint firstItem="l9Q-zx-UFk" firstAttribute="leading" secondItem="WOi-Gf-l7C" secondAttribute="leading" constant="20" id="VJI-O2-jUi"/>
+                            <constraint firstItem="9gf-Me-27n" firstAttribute="top" secondItem="WOi-Gf-l7C" secondAttribute="top" constant="15" id="VdP-wP-DIv"/>
                             <constraint firstItem="ETN-1V-yQo" firstAttribute="top" secondItem="l9Q-zx-UFk" secondAttribute="bottom" constant="15" id="bkD-Ht-IzN"/>
+                            <constraint firstItem="9gf-Me-27n" firstAttribute="leading" secondItem="WOi-Gf-l7C" secondAttribute="leading" constant="30" id="c3I-zJ-93g"/>
                             <constraint firstItem="YrU-q1-VU2" firstAttribute="top" secondItem="ETN-1V-yQo" secondAttribute="bottom" constant="15" id="cyd-e8-M1R"/>
+                            <constraint firstItem="l9Q-zx-UFk" firstAttribute="leading" secondItem="WOi-Gf-l7C" secondAttribute="leading" constant="30" id="hk9-Ew-VXV"/>
                             <constraint firstItem="ETN-1V-yQo" firstAttribute="leading" secondItem="WOi-Gf-l7C" secondAttribute="leading" constant="30" id="jKi-zG-ve8"/>
+                            <constraint firstItem="l9Q-zx-UFk" firstAttribute="top" secondItem="WOi-Gf-l7C" secondAttribute="top" constant="15" id="mLM-LP-1fO"/>
                             <constraint firstItem="WOi-Gf-l7C" firstAttribute="bottom" secondItem="YrU-q1-VU2" secondAttribute="bottom" constant="15" id="mja-Vd-XSD"/>
+                            <constraint firstItem="WOi-Gf-l7C" firstAttribute="trailing" secondItem="9gf-Me-27n" secondAttribute="trailing" constant="30" id="sk3-E0-sZH"/>
                             <constraint firstItem="WOi-Gf-l7C" firstAttribute="trailing" secondItem="l9Q-zx-UFk" secondAttribute="trailing" constant="20" id="uJE-g3-Oqv"/>
+                            <constraint firstItem="ETN-1V-yQo" firstAttribute="top" secondItem="9gf-Me-27n" secondAttribute="bottom" constant="15" id="v0W-9i-DEj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WOi-Gf-l7C"/>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="YrU-q1-VU2" id="UyO-iJ-OgW"/>
+                        <outlet property="nameView" destination="9gf-Me-27n" id="xSU-gf-kmP"/>
                         <outlet property="textView" destination="ETN-1V-yQo" id="YBU-BY-PDp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RGQ-6m-ZLQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2696.8000000000002" y="132.68365817091455"/>
+            <point key="canvasLocation" x="2694.202898550725" y="132.58928571428572"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="LEQ-if-sGG">
@@ -171,13 +201,24 @@
                     <view key="view" contentMode="scaleToFill" id="WD2-rQ-G7G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i2A-dO-wOB">
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1Kw-OI-ioz"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wpT-cw-bVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3436" y="133"/>
+            <point key="canvasLocation" x="3434.7826086956525" y="132.58928571428572"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lnQ-pT-7dw">
